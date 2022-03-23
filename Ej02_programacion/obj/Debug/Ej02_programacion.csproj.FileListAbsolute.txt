@@ -1,0 +1,8 @@
+C:\Users\SENA\Desktop\C#\Ej02_programacion\bin\Debug\Ej02_programacion.exe.config
+C:\Users\SENA\Desktop\C#\Ej02_programacion\bin\Debug\Ej02_programacion.exe
+C:\Users\SENA\Desktop\C#\Ej02_programacion\bin\Debug\Ej02_programacion.pdb
+C:\Users\SENA\Desktop\C#\Ej02_programacion\obj\Debug\Ej02_programacion.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\C#\Ej02_programacion\obj\Debug\Ej02_programacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\SENA\Desktop\C#\Ej02_programacion\obj\Debug\Ej02_programacion.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\C#\Ej02_programacion\obj\Debug\Ej02_programacion.exe
+C:\Users\SENA\Desktop\C#\Ej02_programacion\obj\Debug\Ej02_programacion.pdb

@@ -1,0 +1,13 @@
+C:\Users\SENA\Desktop\C#\Ej03_programacion\bin\Debug\Ej03_programacion.exe.config
+C:\Users\SENA\Desktop\C#\Ej03_programacion\bin\Debug\Ej03_programacion.exe
+C:\Users\SENA\Desktop\C#\Ej03_programacion\bin\Debug\Ej03_programacion.pdb
+C:\Users\SENA\Desktop\C#\Ej03_programacion\obj\Debug\Ej03_programacion.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\C#\Ej03_programacion\obj\Debug\Ej03_programacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\SENA\Desktop\C#\Ej03_programacion\obj\Debug\Ej03_programacion.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\C#\Ej03_programacion\obj\Debug\Ej03_programacion.exe
+C:\Users\SENA\Desktop\C#\Ej03_programacion\obj\Debug\Ej03_programacion.pdb
+C:\Users\diabl\Downloads\SENA-ADSI 2396023\2. Segundo Trimestre\Julian Salazar  MIERCOLES\Preactica C#\Ej03_programacion\obj\Debug\Ej03_programacion.csproj.AssemblyReference.cache
+C:\Users\diabl\Downloads\SENA-ADSI 2396023\2. Segundo Trimestre\Julian Salazar  MIERCOLES\Preactica C#\Ej03_programacion\obj\Debug\Ej03_programacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\diabl\Downloads\SENA-ADSI 2396023\2. Segundo Trimestre\Julian Salazar  MIERCOLES\Preactica C#\Ej03_programacion\obj\Debug\Ej03_programacion.csproj.CoreCompileInputs.cache
+C:\Users\diabl\Downloads\SENA-ADSI 2396023\2. Segundo Trimestre\Julian Salazar  MIERCOLES\Preactica C#\Ej03_programacion\obj\Debug\Ej03_programacion.exe
+C:\Users\diabl\Downloads\SENA-ADSI 2396023\2. Segundo Trimestre\Julian Salazar  MIERCOLES\Preactica C#\Ej03_programacion\obj\Debug\Ej03_programacion.pdb
