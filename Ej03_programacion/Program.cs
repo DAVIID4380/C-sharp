@@ -91,8 +91,102 @@ namespace Ej03_programacion
             perimetro = (ancho + alto)*2;
             
             Console.WriteLine("el area del rectangulo es {0}" , area);
-            Console.WriteLine("el perimetro del rectangulo es {0}" , perimetro)
+            Console.WriteLine("el perimetro del rectangulo es {0}" , perimetro);
+
+            /*11. Hacer un algoritmo que lea dos números enteros A y B y muestre su diferencia.*/
+
+            int num1;
+            int num2;
+            int total;
+
+            Console.WriteLine("Digite un primer numero entero cualquiera");
+            num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("digite un segundo numero entero cualquiera");
+            num2 = int.Parse(Console.ReadLine());
+
+            total = num1 - num2;
             
+            Console.WriteLine("La diferencia de {0} - {1} es {2}" , num1 , num2 , total);
+            
+            /*12. Hacer un algoritmo que lea el nombre de una persona, el valor de la hora trabajada y el número de
+            horas que trabajó. Se debe mostrar el nombre y el pago de la persona.*/
+
+            string nombre;
+            double valor_hora;
+            double n_horas;
+            double pago;
+
+            Console.WriteLine("Cual es su nombre");
+            nombre = Console.ReadLine();
+
+            Console.WriteLine("digite el valor de la hora trabajada");
+            valor_hora = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("digite el numero de horas que trabajo");
+            n_horas = double.Parse(Console.ReadLine());
+
+            pago = valor_hora * n_horas;
+            
+            Console.WriteLine("Su pago es de {0}" , pago);
+
+            /*13. Pedir el radio de un círculo y calcular su área. A=PI*r^2.*/
+
+            double radio;
+            double area;
+
+            Console.WriteLine("Digite el valor del radio de un circulo");
+            radio = double.Parse(Console.ReadLine());
+
+            area = Math.PI * radio^2;
+
+            Console.WriteLine("El area del circulo es {0}" , area);
+
+            /*14. Pedir el radio de una circunferencia y calcular su longitud.*/
+
+            double radio;
+            double longitud;
+
+            Console.WriteLine("Digite el valor del radio de un circulo");
+            radio = double.Parse(Console.ReadLine());
+
+            longitud = 2 * Math.PI * radio;
+
+            Console.WriteLine("La longitud del circulo es {0}" , longitud);
+
+            /*15. Pedir el lado de un cuadrado, mostrar su área y su perímetro.*/
+
+            double lado;
+            double area;
+            double perimetro;
+
+            Console.WriteLine("Digite el valor para el lado de un cuadrado");
+            lado = double.Parse(Console.ReadLine());
+
+            area = lado * lado;
+
+            Console.WriteLine("El area del cuadrado es {0}" , area);
+
+            perimetro = lado * 4;
+
+            Console.WriteLine("El perimetro del cuadrado es {0}" , perimetro);
+
+            /*16. Calcular el área de un rectángulo de lados X e Y.0*/
+
+            double ladoX;
+            double ladoY
+            double area;
+
+            Console.WriteLine("Digite el valor para el lado X de un rectangulo");
+            ladoX = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite el valor para el lado X de un rectangulo");
+            ladoY = double.Parse(Console.ReadLine());
+
+            area = ladoY * ladoX;
+
+            Console.WriteLine("El area del rectangulo es {0}" , area);
+
             Console.ReadKey();
         }
     }
