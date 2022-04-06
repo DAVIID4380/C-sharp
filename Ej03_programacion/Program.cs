@@ -351,6 +351,58 @@ namespace Ej03_programacion
                 Console.WriteLine("Rango incorrecto");
             }
             
+            /*26. Pedir una nota numérica entera entre 0 y 10, y mostrar dicha nota de la forma: cero, uno, dos, tres...*/
+
+            double nota;
+
+            Console.WriteLine("Digite número entre 0 y 10");
+            bool validacion = double.TryParse(Console.ReadLine() , out nota);
+
+            if (validacion == false)
+            {
+                Console.WriteLine("La nota ingresada es incorrecta");
+            }
+
+            switch (nota)
+            {
+                case 0:
+                    Console.WriteLine("cero");
+                    break;
+                case 1:
+                    Console.WriteLine("uno");
+                    break;
+                case 2:
+                    Console.WriteLine("dos");
+                    break;
+                default:
+                    Console.WriteLine("nota incorrecta");
+                    break;
+            }
+            
+            /*28. Un trabajador recibe su pago, según la cantidad de horas trabajadas y su valor. Si la cantidad de
+            horas trabajadas es mayor que 40, éstas se consideran horas extra, y tienen un incremento de $10000
+            (diez mil) sobre el valor de la hora. Calcular y mostrar el salario (pago) del trabajador. Nota: leer horas
+            trabajadas y valor de la hora.*/
+
+            double horas_trabajadas, valor_hora , horas_extras , salario;
+
+            Console.WriteLine("Digite el valor de la hora");
+            valor_hora = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite la cantidad de horas trabajadas");
+            bool validacion = double.TryParse(Console.ReadLine(), out horas_trabajadas);
+
+            salario = horas_trabajadas * valor_hora;
+
+            if (horas_trabajadas > 40)
+            {
+                horas_extras = horas_trabajadas - 40;
+                salario = salario + horas_extras * 10000;
+                Console.WriteLine("Tiene {0} horas extras" , horas_extras);
+            }
+
+            Console.WriteLine("El salario es: {0}" , salario);
+            
             Console.ReadKey();
         }
     }
