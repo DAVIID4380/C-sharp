@@ -133,7 +133,7 @@ namespace Ej03_programacion
             Console.WriteLine("Digite el valor del radio de un circulo para calcular su área");
             radio = double.Parse(Console.ReadLine());
 
-            area = Math.PI * radio^2;
+            area = Math.PI * Math.Pow(radio, 2);
 
             Console.WriteLine("El área del circulo es {0} " , area);
 
