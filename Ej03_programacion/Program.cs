@@ -327,6 +327,30 @@ namespace Ej03_programacion
                 Console.WriteLine("El orden de mayor a menor es {0} , {1} , {2}" , num3 , num2 , num1);
             }
             
+             /*.25. Pedir una nota de 0 a 5 y mostrarla de la forma: Insuficiente (0 – 2,9), Suficiente (3 – 4,5) y Bien (4,6 – 5)*/
+
+            double nota;
+
+            Console.WriteLine("Digite el valor de la nota");
+            nota = double.Parse(Console.ReadLine());
+
+            if (nota >= 0 && nota < 3)
+            {
+                Console.WriteLine("La nota es insuficiente");
+            }
+            else if (nota >= 3 && nota < 4.6)
+            {
+                Console.WriteLine("La nota es suficiente");
+            }
+            else if (nota >= 4.6 && nota <= 5)
+            {
+                Console.WriteLine("La nota es bien");
+            }
+            else
+            {
+                Console.WriteLine("Rango incorrecto");
+            }
+            
             Console.ReadKey();
         }
     }
