@@ -314,20 +314,64 @@ namespace Ej03_programacion
             Console.WriteLine("Digite otro número cualquiera");
             num3 = double.Parse(Console.ReadLine());
 
-            if (num1 > num2 > num3)
+            if (num1 > num2 && num1 > num3 && num2 > num3)
             {
                 Console.WriteLine("El orden de mayor a menor es {0} , {1} , {2}" , num1 , num2 , num3);
             }
-            else if (num1 == num2 == num3)
+            else if (num1 > num2 && num1 > num3 && num3 > num2)
             {
-                Console.WriteLine("{0} , {1} y {2} son iguales" , num1 , num2 , num3);
+                Console.WriteLine("El orden de mayor a menor es {0} , {1} , {2}" , num1 , num3 , num2);
             }
-            else
+            else if (num2 > num1 && num2 > num3 && num1 > num3)
+            {
+                Console.WriteLine("El orden de mayor a menor es {0} , {1} , {2}" , num2 , num1 , num3);
+            }
+            else if (num2 > num1 && num2 > num3 && num3 > num1)
+            {
+                Console.WriteLine("El orden de mayor a menor es {0} , {1} , {2}" , num2 , num3 , num1);
+            }
+            else if (num3 > num2 && num3 > num1 && num2 > num1)
             {
                 Console.WriteLine("El orden de mayor a menor es {0} , {1} , {2}" , num3 , num2 , num1);
             }
+            else if (num1 == num2 && num1 == num3 && num2 == num3)
+            {
+                Console.WriteLine("Los números que ingresó son iguales");
+            }
+            else
+            {
+                Console.WriteLine("El orden de mayor a menor es {0} , {1} , {2}" , num3 , num1 , num2);
+            }
+             
+            /*24. Pedir un número entre 0 y 9.999 y decir cuántas cifras tiene*/
+
+            Double num;
+
+            Console.WriteLine("Digite un número cualquiera entre 0 y 9999");
+            num = Double.Parse(Console.ReadLine());
+
+            if (num >= 0 && num < 10)
+            {
+              Console.WriteLine("El número tiene una (1) cifra");
+            }
+            else if (num >= 10 && num < 100)
+            {
+              Console.WriteLine("El número tiene dos (2) cifras");
+            }
+            else if (num >= 100 && num < 1000)
+            {
+              Console.WriteLine("El número tiene tres (3) cifras");
+            }
+            else if (num >= 1000 && num < 10000)
+            {
+              Console.WriteLine("El número tiene cuatro (4) cifras");
+            }
+            else
+            {
+              Console.WriteLine("El número que digitó no está entre 0 y 9999");
+            }
             
-             /*.25. Pedir una nota de 0 a 5 y mostrarla de la forma: Insuficiente (0 – 2,9), Suficiente (3 – 4,5) y Bien (4,6 – 5)*/
+            /*.25. Pedir una nota de 0 a 5 y mostrarla de la forma: Insuficiente (0 – 2,9), Suficiente (3 – 4,5) y Bien (4,6 – 5)*/
 
             double nota;
 
@@ -374,34 +418,118 @@ namespace Ej03_programacion
                 case 2:
                     Console.WriteLine("dos");
                     break;
+                case 3:
+                    Console.WriteLine("tres");
+                    break;
+                case 4:
+                    Console.WriteLine("cuatro");
+                    break;
+                case 5:
+                    Console.WriteLine("cinco");
+                    break;
+                case 6:
+                    Console.WriteLine("seis");
+                    break;
+                case 7:
+                    Console.WriteLine("siete");
+                    break;
+                case 8:
+                    Console.WriteLine("ocho");
+                    break;
+                case 9:
+                    Console.WriteLine("nueve");
+                    break;
+                case 10:
+                    Console.WriteLine("diez");
+                    break;
                 default:
                     Console.WriteLine("nota incorrecta");
                     break;
+            }
+            
+            /*27. Pedir un número y decir si es par o impar*/
+            
+            double num;
+
+            Console.WriteLine("Digite un número cualquiera");
+            num = double.Parse(Console.ReadLine());
+
+            if (num % 2 == 0)
+            {
+              Console.WriteLine("El número digitado es par");
+            }
+            else
+            {
+              Console.WriteLine("El número digitado es impar");
             }
             
             /*28. Un trabajador recibe su pago, según la cantidad de horas trabajadas y su valor. Si la cantidad de
             horas trabajadas es mayor que 40, éstas se consideran horas extra, y tienen un incremento de $10000
             (diez mil) sobre el valor de la hora. Calcular y mostrar el salario (pago) del trabajador. Nota: leer horas
             trabajadas y valor de la hora.*/
-
-            double horas_trabajadas, valor_hora , horas_extras , salario;
-
-            Console.WriteLine("Digite el valor de la hora");
-            valor_hora = double.Parse(Console.ReadLine());
+            
+            Double horas_trabajadas , valor_hora , horas_extras , salario;
 
             Console.WriteLine("Digite la cantidad de horas trabajadas");
-            bool validacion = double.TryParse(Console.ReadLine(), out horas_trabajadas);
+            horas_trabajadas = Double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite el valor de la hora");
+            valor_hora = Double.Parse(Console.ReadLine());
 
             salario = horas_trabajadas * valor_hora;
 
             if (horas_trabajadas > 40)
             {
-                horas_extras = horas_trabajadas - 40;
-                salario = salario + horas_extras * 10000;
-                Console.WriteLine("Tiene {0} horas extras" , horas_extras);
+              horas_extras = horas_trabajadas - 40;
+              salario = salario + (horas_extras * 10000);
+              Console.WriteLine("Usted tiene {0} horas extras" , horas_extras);
+              Console.WriteLine("El salario es: {0}" , salario);
             }
+            else 
+            {
+              Console.WriteLine("el salario es {0}" , salario);
+            }
+            
+            /*29. Dado un monto, calcular el descuento considerando que por encima de 100 
+            el descuento es del 10% y por debajo de 100, el descuento es del 2%*/
 
-            Console.WriteLine("El salario es: {0}" , salario);
+            Double monto , descuento;
+
+            Console.WriteLine("Digite un monto cualquiera");
+            monto = Double.Parse(Console.ReadLine());
+
+            descuento = (monto * 2) / 100;
+
+            if (monto > 100)
+            {
+              descuento = (monto * 10) / 100;
+              Console.WriteLine("El descuento es: {0}" , descuento);
+            }
+            else
+            {
+              Console.WriteLine("El descuento es: {0}" , descuento);
+            }
+            
+            /*30. Leer dos números y calcular su división, teniendo en cuenta que el denominador no debe ser 0 (cero)*/
+
+            Double num1 , num2 , resultado;
+
+            Console.WriteLine("Digite un número cualquiera");
+            num1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite un número cualquiera pero no el cero (0), para efectuar la división");
+            num2 = double.Parse(Console.ReadLine());
+
+            resultado = num1 / num2;
+
+            if (num2 == 0)
+            {
+              Console.WriteLine("El segundo número o denominador no debe ser cero (0)");
+            }
+            else
+            {
+              Console.WriteLine("El resultado de la división es: {0}" , resultado);
+            }
             
             Console.ReadKey();
         }
