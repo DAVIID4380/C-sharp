@@ -12,6 +12,7 @@ namespace Ej03_programacion
         {
             /* 06.Algoritmo que lea el nombre de un articulo,la cantidad a comprar, el valor unitario 
             y muestre el nombre y el total a pagar*/
+            
             string articulo;
             int cantidad;
             double valor, total;
@@ -30,6 +31,7 @@ namespace Ej03_programacion
             Console.WriteLine("Usted va a comprar {0} y el total a pagar es {1}", articulo, total);
 
             /* 07.Hacer un algoritmo para leer dos numeros los cuales seran tecleados por el usuario*/
+            
             double num1;
             double num2;
             double resultado;
@@ -45,6 +47,7 @@ namespace Ej03_programacion
             Console.WriteLine("el resultado de sumar {0} + {1} es {2} ", num1, num2, resultado);
 
             /*08. Hacer un algoritmo que lea el nombre de una persona y número de horas que estudia en la semana.*/
+            
             string nombre;
             double hrs_estud;
 
@@ -58,6 +61,7 @@ namespace Ej03_programacion
 
             /*09. Hacer un algoritmo que lea el nombre de un estudiante, la cantidad de materias perdidas y la cantidad
             de materias ganadas.*/
+            
             string nombre_estud;
             int mater_perd;
             int mater_gana;
